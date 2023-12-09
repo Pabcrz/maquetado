@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.noResponsive{
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+    background-color: #9e9292;
+    color: white;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.responsive{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    background-color: rgb(74, 74, 236);
+    color: white;
+    display: inline-block;
+}
+
+.responsiveChild1{
+    width: 15%;
+    border: 1px solid black;
+    height: 70%;
+    display: inline-block;
+
+}
+
+.responsiveChild2{
+    width: 66%;
+    border: solid 1px black;
+    height: 30%;
+    display: inline-block;
+    margin: 0 10px
+}
+
+.responsiveChild3{
+    width: 15%;
+    border: solid 1px black;
+    height: 30%;
+    height: 200px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    /* .noResponsive{
+        background-color: green;
+    } */
+    .responsiveChild1, .responsiveChild2, .responsiveChild3{
+        width: 100%;
+        margin: 0;
+    }
+    .visibleTablet{
+        display: none;
+    }
+    .visibleDesktop{
+        display: none;
+    }
+    .visibleDesktopFull{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: rgb(24, 173, 10);
+    }
+    .visibleMobile{
+        display: none;
+    }
+    .visibleDesktop{
+        display: none;
+    }
+    .visibleDesktopFull{
+        display: none;
+    }
+}    
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color:  green;
+    }
+    .visibleMobile{
+        display: none;
+    }
+    .visibleDesktop{
+        display: none;
+    }
+    .visibleDesktopFull{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-color: rgb(180, 73, 73);
+    }
+    .visibleMobile{
+        display: none;
+    }
+    .visibleTablet{
+        display: none;
+    }
+    .visibleDesktopFull{
+        display: none;
+    }
+    .visibleDesktop{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-color: brown;
+    }
+    .visibleMobile{
+        display: none;
+    }
+    .visibleTablet{
+        display: none;
+    }
+    .visibleDesktop{
+        display: none;
+    }
+    .visibleDesktopFull{
+        display: block;
+    }
+}
