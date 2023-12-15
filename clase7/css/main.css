@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+section {
+  margin: 10px;
+}
+
+.seccion {
+  background-color: grey;
+  color: black;
+}
+
+.seccion1 {
+  background-color: grey;
+  color: rgb(44, 85, 221);
+}
+
+.seccion1 article p {
+  font-size: 20px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .seccion {
+  width: 33%;
+}
+
+.navbar {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
