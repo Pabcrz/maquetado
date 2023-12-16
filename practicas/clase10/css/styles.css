@@ -1,0 +1,42 @@
+.carousel-inner,
+.carousel-indicators,
+.carousel-item{
+    max-height: 500px;
+}
+
+/* .carousel-item img{
+    max-width: 90%;
+    max-height: 90%;
+} */
+
+/* Area de imagenes */
+.mainContainer{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.cardContainer{
+    /* margin:1px; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1, .col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    margin: 50px 0;
+    max-height: 500px;
+}
+
+.mb-3{
+    display: flex;
+    max-width: 90%;
+}
